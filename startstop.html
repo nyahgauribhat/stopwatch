@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <button onclick = "stopalerts()"> Stop alerts</button>
+   
+    <script> 
+   var id = setInterval(function(){alert("hello world")}, 4000 ) ;
+   console.log(id);
+   function stopalerts() {clearInterval(id)}
+    </script>
+    
+</body>
+</html>
